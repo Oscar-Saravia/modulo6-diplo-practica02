@@ -1,30 +1,34 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
+  <Menu>
+    <router-link to="/">Home</router-link>
     <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+    <router-link to="/clients" v-if="canSee(['super-admin', 'admin'])">Clients</router-link>
+    <router-link to="/vehicles" v-if="canSee(['super-admin', 'admin', 'user'])">Vehicles</router-link>
+    <router-link to="/mechanics" v-if="canSee(['super-admin', 'admin'])">Mechanics</router-link>
+    <router-link to="/services" v-if="canSee(['super-admin', 'admin', 'user'])">Services</router-link>
+  </Menu>
+  <router-view />
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+<script>
+import {mapGetters } from 'vuex'
+import Menu from './components/Menu.vue'
 
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+export default {
+  name: 'App',
+  components: {
+    Menu
+  },
+  methods: {
+    canSee(roles) {
+      console.log('canSee', this.role);
+      return roles.includes(this.role);
     }
+  },
+  computed: {
+    ...mapGetters(['role'])
   }
 }
-</style>
+</script>
+
+<style lang="scss"></style>

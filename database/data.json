@@ -1,0 +1,254 @@
+{
+  "clients": [
+    {
+      "id": "0",
+      "name": "Ana García",
+      "phone": "591-12345600",
+      "address": "Avenida Libertad"
+    },
+    {
+      "id": "1",
+      "name": "Juan Pérez",
+      "phone": "591-12345678",
+      "address": "Avenida Heroinas"
+    },
+    {
+      "id": "2",
+      "name": "Omar Velez",
+      "phone": "591-123456789",
+      "address": "Avenida Cardenas"
+    },
+    {
+      "id": "3",
+      "name": "María Martínez",
+      "phone": "591-123456780",
+      "address": "Avenida Bolívar"
+    },
+    {
+      "id": "4",
+      "name": "Jose Maria",
+      "phone": "591-123456781",
+      "address": "Avenida España"
+    },
+    {
+      "id": "5",
+      "name": "Sofía García",
+      "phone": "591-123456782",
+      "address": "Avenida Independencia"
+    },
+    {
+      "id": "f35c",
+      "name": "Oscar Saravia",
+      "phone": "1234235",
+      "address": "Avenida Olivos"
+    },
+    {
+      "id": "fba6",
+      "name": "Mike",
+      "phone": "123",
+      "address": "ale"
+    },
+    {
+      "id": "6e72",
+      "name": "Omar",
+      "phone": "1234",
+      "address": "asdfasfjk"
+    }
+  ],
+  "vehicles": [
+    {
+      "id": "0",
+      "client_id": 0,
+      "type": "Motorcycle",
+      "brand": "Toyota",
+      "model": "Corolela",
+      "year": 2019
+    },
+    {
+      "id": "1",
+      "client_id": 1,
+      "type": "Car",
+      "brand": "Honda",
+      "model": "Civic",
+      "year": 2020
+    },
+    {
+      "id": "2",
+      "client_id": 2,
+      "type": "Car",
+      "brand": "Ford",
+      "model": "Mustang",
+      "year": 2021
+    },
+    {
+      "id": "3",
+      "client_id": 3,
+      "type": "Car",
+      "brand": "Chevroleet",
+      "model": "Corvette",
+      "year": 2022
+    },
+    {
+      "id": "4",
+      "client_id": 4,
+      "type": "Motorcycle",
+      "brand": "Harly-Davidson",
+      "model": "VRod Night Rod Special",
+      "year": 2023
+    },
+    {
+      "id": "5",
+      "client_id": 5,
+      "type": "Car",
+      "brand": "Nissan",
+      "model": "Leaf",
+      "year": 2024
+    },
+    {
+      "id": "74fa",
+      "client_id": "3",
+      "type": "Motorcycle",
+      "brand": "Ninja",
+      "model": "kawazaki",
+      "year": 2019
+    },
+    {
+      "id": "3923",
+      "client_id": "6e72",
+      "type": "Motorcycle",
+      "brand": "Chopper",
+      "model": "1990",
+      "year": 99
+    },
+    {
+      "id": "cbfa",
+      "client_id": "0",
+      "type": "Car",
+      "brand": "Chopper",
+      "model": "1990",
+      "year": 12
+    },
+    {
+      "id": "dbec",
+      "client_id": "6e72",
+      "type": "Motorcycle",
+      "brand": "Chopper",
+      "model": "kawazaki",
+      "year": 99
+    }
+  ],
+  "mechanics": [
+    {
+      "id": "1",
+      "name": "Pedro Gómez",
+      "specialization": "Motores",
+      "phone": "591-123456789"
+    },
+    {
+      "id": "2",
+      "name": "Maria Fernández",
+      "specialization": "Pintura",
+      "phone": "591-123456780"
+    },
+    {
+      "id": "3",
+      "name": "Sofía Martínez",
+      "specialization": "Repuestos",
+      "phone": "591-123456781"
+    },
+    {
+      "id": "4",
+      "name": "Andrés Ruiz",
+      "specialization": "Limpieza",
+      "phone": "591-123456782"
+    },
+    {
+      "id": "5",
+      "name": "María Sánchez",
+      "specialization": "Electricidad",
+      "phone": "591-123456783"
+    }
+  ],
+  "services": [
+    {
+      "id": "0",
+      "vehicle_id": "1",
+      "mechanic_id": "4",
+      "description": "Revision de motor",
+      "cost": 50,
+      "registration_date": "2024-08-02",
+      "delivery_date": "2024-08-04"
+    },
+    {
+      "id": "1",
+      "vehicle_id": "0",
+      "mechanic_id": 1,
+      "description": "Revision de motor",
+      "cost": 50,
+      "registration_date": "2024-08-03",
+      "delivery_date": "2024-08-05"
+    },
+    {
+      "id": "2",
+      "vehicle_id": 2,
+      "mechanic_id": 2,
+      "description": "Cambio de aceite",
+      "cost": 30,
+      "registration_date": "2024-08-04",
+      "delivery_date": "2024-08-06"
+    },
+    {
+      "id": "3",
+      "vehicle_id": 3,
+      "mechanic_id": 3,
+      "description": "Cambio de pintura",
+      "cost": 20,
+      "registration_date": "2024-08-05",
+      "delivery_date": "2024-08-07"
+    },
+    {
+      "id": "4",
+      "vehicle_id": 4,
+      "mechanic_id": 4,
+      "description": "Cambio de aceite",
+      "cost": 30,
+      "registration_date": "2024-08-06",
+      "delivery_date": "2024-08-08"
+    },
+    {
+      "id": "5",
+      "vehicle_id": 5,
+      "mechanic_id": 5,
+      "description": "Cambio de pintura",
+      "cost": 20,
+      "registration_date": "2024-08-07",
+      "delivery_date": "2024-08-09"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "name": "admin",
+      "email": "admin@mechanic.com",
+      "password": "admin123",
+      "role": "super-admin",
+      "token": "s8dfalsdf82w2324wdfsd9f0w9exdi8s"
+    },
+    {
+      "id": "2",
+      "name": "Oscar",
+      "email": "oscar@mechanic.com",
+      "password": "oscar123",
+      "role": "admin",
+      "token": "sdffalsdf82weids8dfasdfsd9f0w9exdi8s"
+    },
+    {
+      "id": "3",
+      "name": "Mateo",
+      "email": "mateo@mechanic.com",
+      "password": "mateo123",
+      "role": "user",
+      "token": "s8dfalsdf82fsds8dfasdfsd9f0w9sdfs"
+    }
+  ]
+}
